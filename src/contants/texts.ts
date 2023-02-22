@@ -1,7 +1,7 @@
 export const TEXTS = [
     {
         tittle: "Spiral Galaxy Spans Space",
-        subTittle: "This Jan. 10, 2013, composite image of the giant barred spiral galaxy NGC 6872 combines visible light images from the European Southern Observatory's Very Large Telescope with far-ultraviolet data from NASA's Galaxy Evolution Explorer (GALEX) and infrared data acquired by NASA's Spitzer Space Telescope."
+        subTittle: "Jan. 10, 2013, composite image of the giant barred spiral galaxy NGC 6872 combines visible light images from the European Southern Observatory's Very Large Telescope with far-ultraviolet data from NASA's Galaxy Evolution Explorer (GALEX) and infrared data acquired by NASA's Spitzer Space Telescope."
     },
     {
         tittle: "Hubble’s New View of the Tarantula Nebula",
@@ -9,7 +9,7 @@ export const TEXTS = [
     },
     {
         tittle: "Astronauts View of the Moon",
-        subTittle: "The waxing gibbous Moon stands out in this Jan. 2, 2023, image from the International Space Station as it orbited 269 miles above the southern Indian Ocean."
+        subTittle: "The waxing gibbous Moon stands out in Jan. 2, 2023, image from the International Space Station as it orbited 269 miles above the southern Indian Ocean."
     },
     {
         tittle: "Webb Unveils Dark Side",

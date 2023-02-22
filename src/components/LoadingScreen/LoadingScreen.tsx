@@ -12,6 +12,7 @@ function LoadingScreen() {
                 <img src="/src/assets/images/rocket.png" alt="rocket" />
             </div>
             <p className="text">Ready to see images from space?</p>
+            <span className="text-span">Start by clicking anywhere</span>
         </div>
     )
 }
