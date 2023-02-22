@@ -55,7 +55,9 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 2rem;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
   font-weight: 500;
   opacity: 1;
   animation: animate1 5s ease;
@@ -66,7 +68,7 @@
   top: 47%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 100;
   opacity: 1;
   animation: animate1 10s ease;
@@ -78,5 +80,18 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-span {
+    top: 50%;
+    font-size: 1.5rem;
+  }
+  
+  .text {
+    top: 40%;
+    font-size: 2rem;
+    width: auto;
   }
 }

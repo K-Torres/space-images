@@ -34,7 +34,7 @@
   align-items: center;
   transition: all 1s linear;
   position: relative;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .images-container > .image {
@@ -49,7 +49,8 @@
 .images-container > .texts-container {
   position: absolute;
   color: white;
-  font-size: 24px;
+  font-size: 12px;
+  width: 90%;
   font-weight: bold;
   left: 50%;
   transform: translateX(-50%);
@@ -58,4 +59,18 @@
 
 .images-container > .texts-container > .subTittle {
   font-weight: 300;
+}
+
+@media (min-width: 800px) {
+  .images-container > .texts-container {
+    width: auto;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .images-container > .texts-container {
+    width: auto;
+    font-size: 24px;
+  }
 }
