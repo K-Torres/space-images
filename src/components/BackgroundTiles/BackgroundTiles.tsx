@@ -45,25 +45,23 @@ function BackgroundTiles() {
 
     return (
         <div className="container">
-            {IMAGES.map((image, index) => {
-                return <>
-                    {(imageToShow > -1 && imageToShow === index) &&
-                        <div className="images-container"  >
-                            <img className="image" style={{ opacity: `${animationStarted ? '0.6' : '1'}` }} src={image} alt={TEXTS[index].tittle}/>
-                            <div className="texts-container" style={{ display: `${animationStarted ? 'none' : ''}` }} >
-                                <p>{TEXTS[index].tittle}</p>
-                                <p className="subTittle">{TEXTS[index].subTittle}</p>
-                            </div>
-                        </div>
-                    }
-                </>
-            })}
 
             {(imageToShow === -1) &&
                 <div className="loadingScreen-wrapper">
                     <LoadingScreen></LoadingScreen>
                 </div>
             }
+
+            {IMAGES.map((image, index) => {
+                return <div className={"images-container"}
+                    style={{ opacity: `${(imageToShow > -1 && imageToShow === index) ? "1" : "0"}` }}  >
+                    <img className="image" src={image} alt={TEXTS[index].tittle} />
+                    <div className="texts-container" style={{ display: `${animationStarted ? 'none' : ''}` }} >
+                        <p>{TEXTS[index].tittle}</p>
+                        <p className="subTittle">{TEXTS[index].subTittle}</p>
+                    </div>
+                </div>
+            })}
 
             <div ref={tilesContainer} className="tiles-container">
                 {
