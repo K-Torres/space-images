@@ -50,7 +50,7 @@ function BackgroundTiles() {
                 return <>
                     {(imageToShow > -1 && imageToShow === index) &&
                         <div className="images-container"  >
-                            <img style={{ opacity: `${animationStarted ? '0.5' : '1'}` }} src={image} alt={TEXTS[index].tittle} loading="lazy" />
+                            <img style={{ opacity: `${animationStarted ? '0.5' : '1'}` }} src={image} alt={TEXTS[index].tittle} loading="eager" />
                             <div className="texts-container" style={{ display: `${animationStarted ? 'none' : ''}` }} >
                                 <p>{TEXTS[index].tittle}</p>
                                 <p className="subTittle">{TEXTS[index].subTittle}</p>
