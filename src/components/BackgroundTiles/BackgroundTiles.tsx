@@ -40,7 +40,6 @@ function BackgroundTiles() {
                 setAnimationStarted(false)
                 setImageToShow((count) => count === 5 ? 0 : count + 1)
             }
-
         })
     }
 
@@ -50,7 +49,7 @@ function BackgroundTiles() {
                 return <>
                     {(imageToShow > -1 && imageToShow === index) &&
                         <div className="images-container"  >
-                            <img style={{ opacity: `${animationStarted ? '0.5' : '1'}` }} src={image} alt={TEXTS[index].tittle} loading="eager" />
+                            <img className="image" style={{ opacity: `${animationStarted ? '0.6' : '1'}` }} src={image} alt={TEXTS[index].tittle}/>
                             <div className="texts-container" style={{ display: `${animationStarted ? 'none' : ''}` }} >
                                 <p>{TEXTS[index].tittle}</p>
                                 <p className="subTittle">{TEXTS[index].subTittle}</p>
@@ -74,7 +73,7 @@ function BackgroundTiles() {
                             opacity: `${animationStarted ? '1' : '0'}`
 
                         }}
-                            onClick={() => handleTileClicked(index)} className="tile"></div>
+                            onClick={() => { handleTileClicked(index) }} className="tile"></div>
                     })
                 }
             </div>
