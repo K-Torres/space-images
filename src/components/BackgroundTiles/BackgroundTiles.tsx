@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import anime from "animejs/lib/anime.es"
 import { TEXTS } from "../../contants/texts"
+import { IMAGES } from "../../contants/images"
 import "./BackgroundTiles.css"
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 
@@ -11,6 +12,7 @@ function BackgroundTiles() {
 
     const [columns, setColumns] = useState(Math.floor(document.body.clientWidth / 50))
     const [rows, setRows] = useState(Math.floor(document.body.clientHeight / 50))
+
     const tilesContainer = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
@@ -48,7 +50,7 @@ function BackgroundTiles() {
 
                 <div className="images-container" style={{
                     opacity: `${animationStarted ? '0.5' : '1'}`,
-                    backgroundImage: `url(/src/assets/images/${imageToShow}.jpg)`
+                    backgroundImage: `url(${IMAGES[imageToShow]})`
                 }} >
                     <div className="texts-container" style={{ display: `${animationStarted ? 'none' : ''}` }} >
                         <p>{TEXTS[imageToShow].tittle}</p>
